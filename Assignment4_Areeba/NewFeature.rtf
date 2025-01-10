@@ -1,0 +1,272 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 .SFNS-Regular_wdth_opsz110000_GRAD_wght2580000;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red231\green231\blue231;\red165\green165\blue165;
+\red39\green129\blue201;\red12\green12\blue12;\red255\green255\blue255;\red212\green20\blue102;\red226\green131\blue14;
+\red20\green152\blue106;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c92549\c92549\c92549;\cssrgb\c70588\c70588\c70588;
+\cssrgb\c18039\c58431\c82745;\cssrgb\c5098\c5098\c5098;\cssrgb\c100000\c100000\c100000;\cssrgb\c87451\c18824\c47451;\cssrgb\c91373\c58431\c4706;
+\cssrgb\c0\c65098\c49020;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid103\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid202\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid301\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid302\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid501\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+Overview
+\f1 \
+\pard\tx2010\pardeftab720\sa160\partightenfactor0
+
+\f2\b0 \cf2 This feature enables the app to send local notifications to the user whenever there is an update regarding a stock's performance. The update is triggered based on the stock\'92s last update field, which is fetched from an external API. The notifications include information such as the stock\'92s name, performance rank, last price, and the time of the update.\
+\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Components Involved
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Stock Table View
+\f2\b0 : Displays a list of stocks (both active and watched) in a table view format. Each stock has a corresponding last update field that will trigger notifications when updated.\
+\ls1\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Notification Logic
+\f2\b0 : Sends a local notification when a stock\'92s performance update is fetched and successfully processed.\
+\ls1\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+External API Integration
+\f2\b0 : The app interacts with an external API to fetch the last update and other stock performance details.\cf3 \
+\pard\tx560\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Detailed Flow of the Feature
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Stock Data Fetching
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The stock data is fetched from Core Data, which stores information about various stocks.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The stock list is divided into two sections: active stocks and watched stocks.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+For each stock, the lastUpdate field is checked:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sa160\partightenfactor0
+\ls2\ilvl2\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+If it is already available, it is displayed directly.\
+\ls2\ilvl2\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+If it is missing, the app triggers an API request to fetch the lastUpdate from an external service.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Fetching Last Update
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The getLastUpdate(performanceId: completion:) method sends a GET request to an external API using the stock's performanceId.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The API response is parsed to extract:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sa160\partightenfactor0
+\ls2\ilvl2\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The last price of the stock.\
+\ls2\ilvl2\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The last update time.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+If the lastUpdate is successfully retrieved, it updates the corresponding stock object in Core Data.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Displaying Stock Information
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Once the lastUpdate is fetched or available, it is displayed in the subtitleLabel of the corresponding table view cell.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The table view is updated to reflect the changes in real-time.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Sending Notification
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The scheduleStockUpdateNotification(stock: updateMessage: )  method schedules a local notification after the stock update is successfully fetched.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The notification includes:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sa160\partightenfactor0
+\ls2\ilvl2
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Title
+\f2\b0 : The stock's name.\
+\ls2\ilvl2
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Body
+\f2\b0 : The stock's last price and the time of the update.\
+\ls2\ilvl2
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Sound
+\f2\b0 : The default notification sound.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The notification is triggered almost immediately after the update is fetched and processed.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	5	}\expnd0\expndtw0\kerning0
+Notification Permissions
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The app requests permission to send notifications when it is first launched or when the user accesses relevant features.\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+If granted, the app can send notifications based on stock updates.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Code Explanation
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Stock Table View Controller
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls3\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The myStocksTableViewController class manages the table view displaying stocks and their details.\
+\ls3\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The fetchStocks( ) method fetches stock data from Core Data, dividing it into activeStocks and watchStocks.\
+\ls3\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The tableView(_:cellForRowAt:) method displays the stock details in the table cells. If the lastUpdate field is missing, it triggers the getLastUpdate method to fetch the update.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+API Call
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls3\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+ThegetLastUpdate(performanceId: completion:) method performs a network request to fetch stock data from the external API.\
+\ls3\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+If the request succeeds, the stock's lastUpdate field is updated, and a notification is scheduled.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Scheduling Notifications
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls3\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The scheduleStockUpdateNotification(stock: updateMessage: ) method is responsible for creating and scheduling a local notification after a stock's update is fetched.\
+\ls3\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The notification is configured with a title, body, and sound, and it is scheduled to trigger immediately.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Notification Permissions
+\f1 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f2\b0 \cf2 For the app to send notifications, it must first request permission from the user. This is done via the following code snippet:\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf5 \cb6 import\cf3  UserNotifications\
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 UNUserNotificationCenter\cf3 .current().requestAuthorization(options: [.alert, .badge, .sound]) \{ granted, error \cf5 in\cf3 \
+    \cf5 if\cf3  granted \{\
+        \cf9 print\cf3 (\cf10 "Permission granted"\cf3 )\
+    \} \cf5 else\cf3  \{\
+        \cf9 print\cf3 (\cf10 "Permission denied: \\(String(describing: error))"\cf3 )\
+    \}\
+\}\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f2\fs32 \cf2 \cb1 This should be called at the start of the app or when relevant features are accessed.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 How Notifications Are Triggered
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Trigger
+\f2\b0 : A notification is triggered whenever a stock's last update is fetched from the external API or when it is missing and needs to be retrieved.\
+\ls4\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Notification Content
+\f2\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls4\ilvl1
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Title
+\f2\b0 : The stock\'92s name.\
+\ls4\ilvl1
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Body
+\f2\b0 : Includes the stock's last price and the time of the last update.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0
+\f1\b \cf2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Notification Delivery
+\f2\b0 : The notification is delivered to the user as soon as it is scheduled and will appear in the system notification centre.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Error Handling
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls5\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+API Failures
+\f2\b0 : If the API request fails or returns invalid data, no notification is triggered. The app logs the error for further troubleshooting.\
+\ls5\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Empty Data
+\f2\b0 : If there is no performanceId for a stock, the app logs this error and does not attempt to fetch data for that stock.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Future Improvements
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Batch Notification
+\f2\b0 : Schedule notifications for multiple stocks at once, rather than sending individual notifications.\
+\ls6\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Custom Notification Timing
+\f2\b0 : Allow users to set a preferred time to receive notifications (e.g., only during working hours).\
+\ls6\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Persistent Notification Settings
+\f2\b0 : Add functionality for users to configure which stocks they want to receive notifications for, and which they want to ignore.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b \cf2 Conclusion
+\f1 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f2\b0 \cf2 This feature enhances the user experience by ensuring that users are kept informed about the latest updates on the stocks they are interested in. It provides real-time updates via local notifications and helps users make timely decisions based on the latest stock data.\
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs28 \cf2 4o mini}
